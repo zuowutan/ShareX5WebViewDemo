@@ -1,15 +1,14 @@
  
-
 Android-X5WebView基本封装和使用
 ====  
  
-###通过OkHttp拦截器、自定义CookieJar有效完成客户端与H5端的Cookie同步管理
+通过OkHttp拦截器、自定义CookieJar有效完成客户端与H5端的Cookie同步管理
  
-###监听WebView的加载进度
+监听WebView的加载进度
  
-###滚动条的设置（隐藏或者显示,内侧显示还是外侧显示）
+滚动条的设置（隐藏或者显示,内侧显示还是外侧显示）
  
-###优化X5WebView的预加载问题（使用IntentService规避风险）
+优化X5WebView的预加载问题（使用IntentService规避风险）
  
  
 [项目文字说明](https://www.jianshu.com/p/88084a66c256) 
