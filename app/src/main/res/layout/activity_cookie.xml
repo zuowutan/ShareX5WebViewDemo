@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+  >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/logintoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#9EC0E6"
+        app:titleTextColor="@android:color/white"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="登 录"
+            android:textColor="#808080"
+            android:textSize="19sp"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e7e7e7"
+        />
+
+    <LinearLayout
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_height="110dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/shape_login"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:scaleX="0.73"
+                android:scaleY="0.85"
+                android:paddingRight="3dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/gamesdk_username"
+                android:layout_height="32dp" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="match_parent"
+                android:hint="请输入账号/手机号:"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:background="@null"
+                android:maxLength="15"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="46dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_login"
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:scaleX="0.6"
+                android:scaleY="0.72"
+                android:paddingRight="3dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/gamesdk_pwd_icon"
+                android:layout_height="32dp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_"
+                android:layout_height="match_parent"
+                android:hint="请输入密码:"
+                android:password="true"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:background="@null"
+                android:maxLength="15"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:layout_weight="2"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:text=" 登        录"
+        android:textSize="16sp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:textColor="#fff"
+        android:background="@drawable/shape_login_register_new"
+        android:gravity="center"
+        android:layout_height="42dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="220dp"
+        android:text=" 测试账号: 18218013313 \n 测试密码: 123456"
+        android:textSize="16sp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:textColor="#fff"
+        android:background="@drawable/shape_login_register_new"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
